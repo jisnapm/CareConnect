@@ -1,0 +1,55 @@
+###
+GET http://127.0.0.1:8000/api/doctors/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/doctors/
+Content-Type: application/json
+
+{
+    "doctor_name" : "Ansa",
+    "specialization" : "Oncology",
+    "experience" : 3,
+    "hospital" : "Lakeshore",
+    "consultation_fee" : 700
+}
+
+###
+GET http://127.0.0.1:8000/api/doctors/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/doctors/2/
+Content-Type: application/json
+
+{
+    "doctor_name" : "Laya",
+    "specialization" : "Gynacology",
+    "experience" : 8,
+    "hospital" : "Medical Trust",
+    "consultation_fee" : 1200
+}
+
+###
+DELETE http://127.0.0.1:8000/api/doctors/4/
+
+
+
+
+###
+GET http://127.0.0.1:8000/api/appointments/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/appointments/
+Content-Type: application/json
+
+{
+    "patient_name" : "Manu",
+    "phone" : "9897417712",
+    "doctor_id" : 3,
+    "appointment_date" : "2026-10-29",
+    "problem" : "Fever"
+}
+
